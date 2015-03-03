@@ -2,7 +2,10 @@ package trytheworld.anagrams;
 
 public class MainClass {
 
-	
+	/*
+	 * The logic of this program is based on the fact that; No matter the arrangement, the sum of all characters in any string will 
+	 * always be equal.
+	 */
 	public static void main(String[] arg0)
 	{
 
@@ -11,6 +14,10 @@ public class MainClass {
 		printValues(input, sumArray);
 	}
 	
+	/*
+	 * This method calculates the sum of all the characters in a string and stores the value in an Integer array. The Integer array is used to 
+	 * track the index of the original string in the input string array.
+	 */
 	public static int[] calculateSum(String[] input)
 	{
 		int[] sumArray = new int[input.length];
@@ -23,6 +30,9 @@ public class MainClass {
 		return sumArray;
 	}
 	
+	/*
+	 * Iterates through the integer array to find matching values and prints the string of the corresponding index. 
+	 */
 	public static void printValues(String[] strings, int[] stringSum)
 	{
 		
